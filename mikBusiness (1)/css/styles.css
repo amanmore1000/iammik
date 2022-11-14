@@ -1,0 +1,283 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-weight: 800;
+}
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+.colored-section {
+    background-color: #3E6D9C;
+    color: white;
+}
+
+.gif-section {
+    color: white;
+    background-image:url('../images/wall.jpg'); 
+    background-repeat:repeat;
+    background-size: cover;
+}
+
+.white-section {
+    background-color: #fff;
+}
+
+.big-heading {
+    font-family: 'Montserrat-Black', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+.navbar {
+    padding-bottom: 4.5rem;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-nav {
+    margin: auto 0 auto auto;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Montserrat-Light', sans-serif;
+    color: #fff;
+}
+
+#title .container-fluid {
+    padding: 17% 15% 18%;
+    text-align: left;
+}
+
+.title-img {
+    position: relative;
+    width: 100%;   
+}
+
+.title-text {
+    text-align: center;
+}
+
+.about-us-text {
+    text-align: left;
+}
+
+#features .container-fluid{
+    padding: 0% 7%;
+}
+
+#features {
+    background-color: #5F9DF7;
+    position: relative;
+}
+
+#features p {
+    color: #fff;
+}
+
+.feature-title {
+    padding: 10% 0 0 0;
+    font-size: 1.5rem;
+}
+
+.feature-title-2 {
+    padding: 2% 0 0 0;
+    font-size: 1.5rem;
+}
+
+.feature-box {
+    padding: 5% 3% 1% 3%;
+}
+
+.feature-box-text {
+    padding: 0% 3% 0% 3%;
+}
+
+.fill-color {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.fill-color:hover {
+    color: #111;
+}
+
+.feature-icon {
+    width: 50%;
+}
+
+.feature-icon-6 {
+    width: 25%;
+}
+
+.feature-text {
+    text-align: left;
+}
+
+#testimonials {
+    background-color: #ef8172;
+}
+
+.testimonial-img {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+#press {
+    background-color: #ef8172;
+    padding-bottom: 3%;
+}
+
+.press-img {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+#pricing {
+    padding: 100px;
+}
+
+.pricing-col {
+    padding: 3% 2%;
+}
+
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.price-text {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin: 3rem 0 3rem;
+}
+
+@media (max-width: 990px) {
+    .title-img {
+        position: static;
+        transform: rotate(0);
+    }
+
+    #title {
+        text-align: center;
+    }
+}
+
+#footer {
+    font-family: 'Montserrat-Black', sans-serif;
+    font-weight: 700;
+    background-color: #fff;
+    color: #8f8f8f;
+}
+
+.social-icon {
+    margin: 20px 10px;
+}
+
+
+.card-subtitle {
+    margin-bottom: 3rem;
+}
+
+.price-subtext {
+    font-size: 1rem;
+    margin: 1rem 0 2rem;
+    color: #727586;
+}
+
+.price-separator {
+    width: 100%;
+    border: 0.5px solid #d5dfff;
+    margin-bottom: 32px;
+}
+
+.package-features {
+    text-align: left;
+}
+
+.check-color {
+    color: #00b090;
+}
+
+.card-body-text {
+    padding: 10% 10%;
+}
+
+.pricing-row {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5% 0;
+}
+
+.card-border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #d5dfff;
+    padding: 7% 5%;
+    border-radius: 1%;
+}
+
+.card-border:hover {
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.16), 0 5px 25px 0 rgba(0, 0, 0, 0.12);
+}
+
+#packages {
+    padding: 5% 0%;
+}
+
+.package-subtitle {
+    font-family: 'Montserrat-Bold', sans-serif;
+    line-height: 1rem;
+}
+
+.package-heading {
+    color: #2f1c6a;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.navbar-default{
+    transition:500ms ease;
+    background:transparent;
+    color: #fff;
+    padding-bottom: 0%;
+}
+
+.navbar-default.scrolled{
+    background:#fff;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+}
+
+.navbar-default.scrolled .navbar-brand {
+    color: #111;
+}
+
+.navbar-default.scrolled .navbar-collapse .navbar-nav .nav-link {
+    color: #111;
+}
