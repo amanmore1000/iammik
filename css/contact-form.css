@@ -1,0 +1,154 @@
+.fcf-body {
+  font-family: -apple-system, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #0000ff;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 2px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.btn-align {
+  text-align: center;
+}
+
+.box-border {
+  background-color: #fff;
+  border: 1px solid #d5dfff;
+  border-radius: 1%;
+}
+
+.left-panel {
+  position: sticky; /* Set the element to become sticky  */
+  height: 100%;
+  top: 0; /* Set the sticky positon top */
+}
+
+.fcf-form-class {
+  margin: 1rem;
+}
+
+/*Existing CSS modified here.*/
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-weight: 800;
+}
+
+.colored-section {
+  background-color: #3E6D9C;
+  color: white;
+}
+
+.gif-section {
+  color: white;
+  background-image:url('../images/wall.jpg'); 
+  background-repeat:repeat;
+  background-size: cover;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+.big-heading {
+  font-family: 'Montserrat-Black', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar-nav {
+  margin: auto 0 auto auto;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: 'Montserrat-Light', sans-serif;
+  color: #fff;
+}
+
+.title-img {
+  position: relative;
+  width: 100%;   
+}
+
+.title-text {
+  text-align: center;
+}
+
+.about-us-text {
+  text-align: left;
+}
+
+#full-area .container-fluid {
+  padding: 5% 5%;
+  text-align: left;
+}
+
+.hidePackage {
+  display: none;
+}
+
+.service-border {
+    background-color: #fff;
+    border: 1px solid #d5dfff;
+    margin: 1rem 0rem;
+}
+
+.service-number {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-align {
+  margin: 0 1rem;
+  position: relative;
+}
+
+@media (max-width: 576px) {
+  .service-number {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .image-align {
+    margin: 0 1rem;
+    position: relative;
+  }
+}
