@@ -1,7 +1,8 @@
 
 <?php 
-if(isset($_POST['submit'])){
-    $to = "amanmore1000@gmail.com"; // this is your Email address
+if(isset($_POST['submit']))
+    {
+    $to = "contact@mikbusiness.com"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Emailaddress 
     
     $fname = $_POST['fname'];
@@ -54,7 +55,7 @@ $headers[] = 'MIME-Version: 1.0';
   
    
 
-     header('Location: ""add your redirection path"");
+     header("Location: https://mikbusiness.com/");
     
     }
 ?>
