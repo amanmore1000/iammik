@@ -126,11 +126,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .service-number {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 5%;
+  padding-bottom: 2%;
 }
 
 .image-align {
@@ -151,4 +148,23 @@ h1, h2, h3, h4, h5, h6{
     margin: 0 1rem;
     position: relative;
   }
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  padding-left: 2%;
+}
+
+.feature-desc {
+  font-size: 0.8rem;
+}
+
+.price-separator {
+  width: 100%;
+  border: 0.5px solid #d5dfff;
+  margin-bottom: 32px;
+}
+
+.box-padding {
+  padding: 2% 3% 0% 5%;
 }
