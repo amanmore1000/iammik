@@ -71,14 +71,14 @@ h1, h2, h3, h4, h5, h6{
 
 .big-heading {
   font-family: 'Montserrat-Black', sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   line-height: 1.5;
   font-weight: 900;
 }
 
 .navbar-brand {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #fff;
 }
@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .nav-link {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: 'Montserrat-Light', sans-serif;
   color: #fff;
 }
@@ -137,11 +137,8 @@ h1, h2, h3, h4, h5, h6{
 
 @media (max-width: 576px) {
   .service-number {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 5%;
+    padding-bottom: 2%;
   }
   
   .image-align {
