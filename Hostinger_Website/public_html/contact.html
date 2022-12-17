@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Contact Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/89e8fdbf17.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/contact-form.css" rel="stylesheet" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var cont = document.getElementById("contents");
+             // Get it from the local storage
+             var selected = localStorage.getItem('selected');
+            var package = document.getElementById(selected + "Package");
+            cont.innerHTML = package.innerHTML;
+        });
+    </script>
+</head>
+<body>
+
+    <section class="colored-section" id="title">
+   
+        <div class="container-fluid">
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-lg our-navbar navbar-default">
+                <a class="navbar-brand" href="index.html">MiK</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html#aboutus">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html#packages">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html#contactus">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Title -->
+            <div class="row">
+                <div class="title-text">
+                    <h1 class="big-heading">Contact Us</h1>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="full-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="contents" class="col-lg-8">
+
+                </div>
+                <div class="col-lg-4 box-border left-panel">
+                    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contactform.php">
+                        <label for="Name" class="fcf-label">Your name</label>
+                        <div class="fcf-input-group">
+                            <input type="text" id="Name" name="fname" class="fcf-form-control" required>
+                        </div>
+                        <div class="fcf-form-group">
+                            <label for="Email" class="fcf-label">Your email address</label>
+                            <div class="fcf-input-group">
+                                <input type="email" id="Email" name="email" class="fcf-form-control" required>
+                            </div>
+                        </div>
+                        <div class="fcf-form-group">
+                            <label for="Phone" class="fcf-label">Phone Number</label>
+                            <div class="fcf-input-group">
+                                <input type="phone" id="Phone" name="phone" type="tel" value="+91 " class="fcf-form-control" required>
+                            </div>
+                        </div>
+                        <div class="fcf-form-group">
+                            <label for="contact reason">Contact Reason</label>
+                            <select id="contact reason" name="reason">
+                            <option value="sales">Sales</option>
+                            <option value="help">Help</option>
+                            <option value="billing">Billing</option>
+                            </select>
+                        </div>
+                        <div class="fcf-form-group">
+                            <label for="Message" class="fcf-label">Your message</label>
+                
+                            <div class="fcf-input-group">
+                                <textarea id="Message" name="message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                            </div>
+                        </div>
+                        <div class="fcf-form-group btn-align">
+                            <button type="submit" id="fcf-button" class="btn btn-outline-info btn-lg">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Call to Action -->
+  
+    <section class="colored-section" id="contactus">
+        <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 about-company">
+                    <h2>MiK Business Solutions</h2>
+                    <p class="pr-5 text-white-50">About the company a little. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p>
+                </div>
+                <div class="col-md-4 footer-column">
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <span class="footer-title">Company</span>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./index.html#aboutus">About us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./index.html#features">Features </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4 footer-column">
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <span class="footer-title">Contact & Support</span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link"><i class="fas fa-envelope"></i>some@email.com</span>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <span class="nav-link"><i class="fas fa-phone"></i>+47 45 80 80 80</span>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fas fa-comments"></i>Live chat</a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Contact us</a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fas fa-star"></i>Give feedback</a>
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
+          
+              <div class="text-center"><i class="fas fa-ellipsis-h"></i></div>
+              
+              <div class="row text-center">
+                <div class="col-md-6 box">
+                  <span class="copyright quick-links">Copyright &copy; Mik Business Solutions <script>document.write(new Date().getFullYear())</script>
+                  </span>
+                </div>
+                <div class="col-md-6 box">
+                  <ul class="list-inline social-buttons">
+                    <li class="list-inline-item">
+                      <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- <div class="col-md-4 box">
+                  <ul class="list-inline quick-links">
+                    <li class="list-inline-item">
+                      <a href="#">Privacy Policy</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">Terms of Use</a>
+                    </li>
+                  </ul>
+                </div> -->
+              </div>
+            </div>
+          </footer>
+    </section>
+
+<!-- Package Details -->
+<div id="basicPackage" class="hidePackage">
+    <div class="container-fluid">
+        <div class="service-border">
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-1 image-align">
+                    <img class="service-number" src="images/number-1.png" alt="www">
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-10 col-8 service-desc">
+                    <p>Social Account</p>
+                    <p>Lorem ipsum dolor sit amet. Sit ducimus rerum vel tempora adipisci qui reprehenderit dolorum vel rerum autem ex numquam sunt sit obcaecati optio. Hic voluptatem eius sit tempora rerum est dolorum cumque est necessitatibus accusamus. Ea repudiandae saepe qui dolores dolor eos sequi quia eos Quis excepturi eum quae corrupti?</p>
+                </div>
+            </div>
+        </div>
+        <div class="service-border">
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-1 image-align">
+                    <img class="service-number" src="images/number-2.png" alt="www">
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-10 col-8 service-desc">
+                    <p>Content Creation</p>
+                    <p>Lorem ipsum dolor sit amet. Sit ducimus rerum vel tempora adipisci qui reprehenderit dolorum vel rerum autem ex numquam sunt sit obcaecati optio. Hic voluptatem eius sit tempora rerum est dolorum cumque est necessitatibus accusamus. Ea repudiandae saepe qui dolores dolor eos sequi quia eos Quis excepturi eum quae corrupti?</p>
+                </div>
+            </div>
+        </div>
+        <div class="service-border">
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-1 image-align">
+                    <img class="service-number" src="images/number-3.png" alt="www">
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-10 col-8 service-desc">
+                    <p>Static Website</p>
+                    <p>Lorem ipsum dolor sit amet. Sit ducimus rerum vel tempora adipisci qui reprehenderit dolorum vel rerum autem ex numquam sunt sit obcaecati optio. Hic voluptatem eius sit tempora rerum est dolorum cumque est necessitatibus accusamus. Ea repudiandae saepe qui dolores dolor eos sequi quia eos Quis excepturi eum quae corrupti?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="standardPackage" class="hidePackage">
+    <div class="container-fluid">
+        <div class="service-border">
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-1 image-align">
+                    <img class="service-number" src="images/number-1.png" alt="www">
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-10 col-8 service-desc">
+                    <p>Social Account</p>
+                    <p>Lorem ipsum dolor sit amet. Sit ducimus rerum vel tempora adipisci qui reprehenderit dolorum vel rerum autem ex numquam sunt sit obcaecati optio. Hic voluptatem eius sit tempora rerum est dolorum cumque est necessitatibus accusamus. Ea repudiandae saepe qui dolores dolor eos sequi quia eos Quis excepturi eum quae corrupti?</p>
+                </div>
+            </div>
+        </div>
+        <div class="service-border">
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-1 image-align">
+                    <img class="service-number" src="images/number-2.png" alt="www">
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-10 col-8 service-desc">
+                    <p>Content Creation</p>
+                    <p>Lorem ipsum dolor sit amet. Sit ducimus rerum vel tempora adipisci qui reprehenderit dolorum vel rerum autem ex numquam sunt sit obcaecati optio. Hic voluptatem eius sit tempora rerum est dolorum cumque est necessitatibus accusamus. Ea repudiandae saepe qui dolores dolor eos sequi quia eos Quis excepturi eum quae corrupti?</p>
+                </div>
+            </div>
+        </div>
+        <div class="service-border">
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-1 image-align">
+                    <img class="service-number" src="images/number-3.png" alt="www">
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-10 col-8 service-desc">
+                    <p>Static Website</p>
+                    <p>Lorem ipsum dolor sit amet. Sit ducimus rerum vel tempora adipisci qui reprehenderit dolorum vel rerum autem ex numquam sunt sit obcaecati optio. Hic voluptatem eius sit tempora rerum est dolorum cumque est necessitatibus accusamus. Ea repudiandae saepe qui dolores dolor eos sequi quia eos Quis excepturi eum quae corrupti?</p>
+                </div>
+            </div>
+        </div>
+        <div class="service-border">
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-1 image-align">
+                    <img class="service-number" src="images/number-4.png" alt="www">
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-10 col-8 service-desc">
+                    <p>Digital Ads</p>
+                    <p>Lorem ipsum dolor sit amet. Sit ducimus rerum vel tempora adipisci qui reprehenderit dolorum vel rerum autem ex numquam sunt sit obcaecati optio. Hic voluptatem eius sit tempora rerum est dolorum cumque est necessitatibus accusamus. Ea repudiandae saepe qui dolores dolor eos sequi quia eos Quis excepturi eum quae corrupti?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="premiumPackage" class="hidePackage">
+    <div class="container-fluid">
+        <div class="service-border">
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-1 image-align">
+                    <img class="service-number" src="images/number-1.png" alt="www">
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-10 col-8 service-desc">
+                    <p>Social Account</p>
+                    <p>Lorem ipsum dolor sit amet. Sit ducimus rerum vel tempora adipisci qui reprehenderit dolorum vel rerum autem ex numquam sunt sit obcaecati optio. Hic voluptatem eius sit tempora rerum est dolorum cumque est necessitatibus accusamus. Ea repudiandae saepe qui dolores dolor eos sequi quia eos Quis excepturi eum quae corrupti?</p>
+                </div>
+            </div>
+        </div>
+        <div class="service-border">
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-1 image-align">
+                    <img class="service-number" src="images/number-2.png" alt="www">
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-10 col-8 service-desc">
+                    <p>Content Creation</p>
+                    <p>Lorem ipsum dolor sit amet. Sit ducimus rerum vel tempora adipisci qui reprehenderit dolorum vel rerum autem ex numquam sunt sit obcaecati optio. Hic voluptatem eius sit tempora rerum est dolorum cumque est necessitatibus accusamus. Ea repudiandae saepe qui dolores dolor eos sequi quia eos Quis excepturi eum quae corrupti?</p>
+                </div>
+            </div>
+        </div>
+        <div class="service-border">
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-1 image-align">
+                    <img class="service-number" src="images/number-3.png" alt="www">
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-10 col-8 service-desc">
+                    <p>Static Website</p>
+                    <p>Lorem ipsum dolor sit amet. Sit ducimus rerum vel tempora adipisci qui reprehenderit dolorum vel rerum autem ex numquam sunt sit obcaecati optio. Hic voluptatem eius sit tempora rerum est dolorum cumque est necessitatibus accusamus. Ea repudiandae saepe qui dolores dolor eos sequi quia eos Quis excepturi eum quae corrupti?</p>
+                </div>
+            </div>
+        </div>
+        <div class="service-border">
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-1 image-align">
+                    <img class="service-number" src="images/number-4.png" alt="www">
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-10 col-8 service-desc">
+                    <p>Digital Ads</p>
+                    <p>Lorem ipsum dolor sit amet. Sit ducimus rerum vel tempora adipisci qui reprehenderit dolorum vel rerum autem ex numquam sunt sit obcaecati optio. Hic voluptatem eius sit tempora rerum est dolorum cumque est necessitatibus accusamus. Ea repudiandae saepe qui dolores dolor eos sequi quia eos Quis excepturi eum quae corrupti?</p>
+                </div>
+            </div>
+        </div>
+        <div class="service-border">
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-1 image-align">
+                    <img class="service-number" src="images/number-5.png" alt="www">
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-10 col-8 service-desc">
+                    <p>Ad Campaigns</p>
+                    <p>Lorem ipsum dolor sit amet. Sit ducimus rerum vel tempora adipisci qui reprehenderit dolorum vel rerum autem ex numquam sunt sit obcaecati optio. Hic voluptatem eius sit tempora rerum est dolorum cumque est necessitatibus accusamus. Ea repudiandae saepe qui dolores dolor eos sequi quia eos Quis excepturi eum quae corrupti?</p>
+                </div>
+            </div>
+        </div>
+        <div class="service-border">
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-1 image-align">
+                    <img class="service-number" src="images/number-6.png" alt="www">
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-10 col-8 service-desc">
+                    <p>Profession Website</p>
+                    <p>Lorem ipsum dolor sit amet. Sit ducimus rerum vel tempora adipisci qui reprehenderit dolorum vel rerum autem ex numquam sunt sit obcaecati optio. Hic voluptatem eius sit tempora rerum est dolorum cumque est necessitatibus accusamus. Ea repudiandae saepe qui dolores dolor eos sequi quia eos Quis excepturi eum quae corrupti?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
